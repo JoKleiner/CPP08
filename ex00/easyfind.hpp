@@ -6,7 +6,7 @@
 /*   By: joklein <joklein@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 10:18:35 by joklein           #+#    #+#             */
-/*   Updated: 2025/07/11 11:42:17 by joklein          ###   ########.fr       */
+/*   Updated: 2025/07/11 12:44:44 by joklein          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@ auto easyfind(T &contain, int find)
 }
 
 #endif
+
+
+//auto here: typename T::iterator
 
 
 // template <typename T>
