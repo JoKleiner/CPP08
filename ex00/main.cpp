@@ -6,7 +6,7 @@
 /*   By: joklein <joklein@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 10:19:06 by joklein           #+#    #+#             */
-/*   Updated: 2025/07/11 12:56:34 by joklein          ###   ########.fr       */
+/*   Updated: 2025/07/14 15:10:16 by joklein          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int main()
         return 1;
     }
     std::cout << "array adrress:  " << &arr[find_pos] << std::endl;
-    std::cout << "result adrress: " << &(*ret_value) << std::endl;
-    std::cout << *ret_value << std::endl;
+    std::cout << "return adrress: " << &(*ret_value) << std::endl;
+    std::cout << "position value: " << arr[find_pos] << std::endl;
+    std::cout << "return value:   " << *ret_value << std::endl;
 }
