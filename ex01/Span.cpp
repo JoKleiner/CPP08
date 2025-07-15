@@ -6,7 +6,7 @@
 /*   By: joklein <joklein@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 13:00:01 by joklein           #+#    #+#             */
-/*   Updated: 2025/07/14 16:06:41 by joklein          ###   ########.fr       */
+/*   Updated: 2025/07/15 14:13:16 by joklein          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,14 +48,14 @@ int Span::longestSpan(){
     return(*(sort.end()-1) - sort[0]);
 }
 
-void multiple_num(Span *sp, unsigned int num){
+void Span::add_multiple_num(unsigned int num){
     std::random_device rd;
-    Span sp_temp = Span(num);
-    try{
-        for(size_t i = 0; i < num; i++)
-            sp_temp.addNumber(rd()%2147483647);
-    }catch(const std::length_error &e){
-        std::cerr << e.what() << std::endl;
-    }
-    sp->insert(sp_temp.begin(), sp_temp.end());
+    std::vector<int> temp_array;
+    
+    for(size_t i = 0; i < num; i++)
+        temp_array.push_back(rd()%2147483647);
+    
+    if(this->m_size < this->m_array.size() + temp_array.size())
+        throw(std::length_error("Out of bounds"));
+    this->m_array.insert(this->m_array.end(), temp_array.begin(), temp_array.end());
 }
