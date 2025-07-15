@@ -6,7 +6,7 @@
 /*   By: joklein <joklein@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 12:59:46 by joklein           #+#    #+#             */
-/*   Updated: 2025/07/15 14:26:25 by joklein          ###   ########.fr       */
+/*   Updated: 2025/07/15 14:37:33 by joklein          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,11 @@ int	main(void)
 	std::cout << RED << "\nSpan2: 100 rmd numbers from 0 to max_int" << DEFAULT << std::endl;
 	Span sp2(100);
 	std::random_device rd;
+	std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dist(INT_MIN, INT_MAX);
 	try{
 		for(size_t i = 0; i < 100; i++)
-			sp2.addNumber(rd()%2147483647);
+			sp2.addNumber(dist(gen));
 	}catch(const std::length_error &e){
 		std::cerr << e.what() << std::endl;
 	}

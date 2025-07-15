@@ -6,7 +6,7 @@
 /*   By: joklein <joklein@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 12:59:59 by joklein           #+#    #+#             */
-/*   Updated: 2025/07/15 14:21:24 by joklein          ###   ########.fr       */
+/*   Updated: 2025/07/15 14:42:26 by joklein          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ class Span
         ~Span() = default;
     
         void addNumber(int i);
-        int shortestSpan();
-        int longestSpan();
+        unsigned int shortestSpan();
+        unsigned int longestSpan();
         void add_multiple_num(unsigned int num);
         
     private:
