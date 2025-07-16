@@ -6,7 +6,7 @@
 /*   By: joklein <joklein@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 14:47:09 by joklein           #+#    #+#             */
-/*   Updated: 2025/07/16 11:10:32 by joklein          ###   ########.fr       */
+/*   Updated: 2025/07/16 11:15:46 by joklein          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,9 @@ class MutantStack : public std::stack<T>
 
 #include "MutantStack.tpp"
 
-# define BOLD "\033[1m"
 # define RESET "\033[0m"
+# define BOLD "\033[1m"
 
-# define DEFAULT "\033[39m"
 # define BLACK "\033[30m"
 # define RED "\033[31m"
 # define GREEN "\033[32m"
@@ -58,3 +57,4 @@ class MutantStack : public std::stack<T>
 # define MAGENTA "\033[35m"
 # define CYAN "\033[36m"
 # define WHITE "\033[37m"
+# define DEFAULT "\033[39m"
