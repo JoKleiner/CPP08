@@ -6,7 +6,7 @@
 /*   By: joklein <joklein@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 14:47:09 by joklein           #+#    #+#             */
-/*   Updated: 2025/07/16 11:15:46 by joklein          ###   ########.fr       */
+/*   Updated: 2025/07/16 11:21:03 by joklein          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ class MutantStack : public std::stack<T>
         using reverse_iterator          = typename cont::reverse_iterator;
         using const_reverse_iterator    = typename cont::const_reverse_iterator;
 
-        iterator begin() {  return this->c.begin(); };
-        iterator end()   {  return this->c.end();   };
+        iterator begin() {  return this->c.begin();  };
+        iterator end()   {  return this->c.end();    };
         const_iterator begin() const {  return this->c.begin();  };
         const_iterator end()   const {  return this->c.end();    };
         reverse_iterator rbegin() {  return this->c.rbegin();  };
